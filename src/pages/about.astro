@@ -1,5 +1,5 @@
 ---
-import Skeleton from '../components/skeleton.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "À propos de moi";
 const identity = {
     firstName: "Sarah",
@@ -28,7 +28,7 @@ const textCase = "uppercase";
     }
 </style>
 
-<Skeleton pageTitle={pageTitle}>
+<BaseLayout pageTitle={pageTitle}>
     
     <h2>... and my new Astro site!</h2>
     <p>This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>
@@ -52,4 +52,4 @@ const textCase = "uppercase";
 
     {goal === 3 ? <p>Mon objectif est de terminer en 3 jours.</p> : <p>Mon objectif n'est pas de 3 jours.</p>}
 
-</Skeleton>
+</BaseLayout>

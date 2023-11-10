@@ -1,13 +1,13 @@
 ---
-import Skeleton from '../components/skeleton.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
 const pageTitle = "Mon blog d'apprentissage Astro";
 ---
 
-<Skeleton pageTitle={pageTitle}>
+<BaseLayout pageTitle={pageTitle}>
     <p>Voici où je vais publier mon parcours d'apprentissage d'Astro.</p>
     <ul>
     	<li><a href="/posts/post-1/">Article 1</a></li>
 		<li><a href="/posts/post-2/">Article 2</a></li>
 		<li><a href="/posts/post-3/">Article 3</a></li>
     </ul>
-</Skeleton>
+</BaseLayout>
