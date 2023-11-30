@@ -27,6 +27,10 @@ console.log('This code will be syntax highlighted!')
 console.log('This code will be syntax highlighted!')
 console.log('This code will be syntax highlighted!')
 ```
+
 ```html
-<div><div>hello</div><div>hello</div></div>
+<div>
+    <div>hello</div>
+    <div>hello</div>
+</div>
 ```
