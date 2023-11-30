@@ -5,5 +5,13 @@ import preact from "@astrojs/preact";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [expressiveCode(), preact()]
+  vite: {
+    plugins: [],
+    ssr: {}, // logLevel: 'silent' // while I'm working on JSON files!
+    css: {
+      devSourcemap: true,
+    },
+  },
+  integrations: [expressiveCode(), preact()],
+  scopedStyleStrategy: 'class'
 });
