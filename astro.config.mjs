@@ -5,5 +5,9 @@ import preact from "@astrojs/preact";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [expressiveCode(), preact()]
+  integrations: [expressiveCode(), preact()],
+  scopedStyleStrategy: 'class',
+  build: {
+    inlineStylesheets: `never`,
+  },
 });
