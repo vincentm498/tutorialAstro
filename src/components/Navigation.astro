@@ -1,8 +1,27 @@
 ---
-
+const allPages = await Astro.glob('../pages/*.astro');
+const pages = [
+    {
+        name: 'Accueil',
+        url: '/',
+    },
+    {
+        name: 'À propos',
+        url: '/about/',
+    },
+    {
+        name: 'Blog',
+        url: '/blog/',
+    },
+    {
+        name: 'Etiquettes',
+        url: '/tags/',
+    }
+]
 ---
+
 <div class="nav-links">
-    <a href="/">Accueil</a>
-    <a href="/about/">À propos</a>
-    <a href="/blog/">Blog</a>
+    {pages.map((page) => 
+        <a href={page.url}>{page.name}</a>
+    )}
 </div>
