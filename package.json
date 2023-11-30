@@ -1,5 +1,5 @@
 {
-  "name": "tutorial",
+  "name": "arclight",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -10,6 +10,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^3.5.0"
+    "@astrojs/preact": "^3.0.1",
+    "astro": "^3.5.0",
+    "astro-expressive-code": "^0.27.1",
+    "preact": "^10.6.5"
   }
 }
